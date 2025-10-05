@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwsetb5i3fcyv"]
+
+[ext_resource type="Texture2D" uid="uid://cmfaw4gp0dyhh" path="res://Farm/Trees/shaded_conifer_A3.png" id="1_jo0dx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xqsc1"]
+radius = 8.0
+height = 16.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -40)
+texture = ExtResource("1_jo0dx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CapsuleShape2D_xqsc1")

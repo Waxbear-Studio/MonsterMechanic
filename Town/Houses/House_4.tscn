@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlwtc5bm5gj5v"]
+
+[ext_resource type="Texture2D" uid="uid://dwfyaw5danqql" path="res://Town/Houses/sMarket.png" id="1_m5e2s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6yqwh"]
+size = Vector2(74, 30)
+
+[node name="Lantern" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -22)
+texture = ExtResource("1_m5e2s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_6yqwh")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpshrfda01ou0"]
+
+[ext_resource type="Texture2D" uid="uid://b26tprps5x1vi" path="res://Town/Lantern/sWooden_Lantern_R.png" id="1_kxgpu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6yqwh"]
+size = Vector2(11, 10)
+
+[node name="Lantern" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9, -16)
+texture = ExtResource("1_kxgpu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_6yqwh")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6ms0o6t7nxfg"]
+
+[ext_resource type="Texture2D" uid="uid://d2nf8hxnfhgdi" path="res://Town/Houses/sHouse_Red.png" id="1_56tdp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6yqwh"]
+size = Vector2(58, 26)
+
+[node name="Lantern" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -22)
+texture = ExtResource("1_56tdp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6yqwh")
